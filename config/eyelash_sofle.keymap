@@ -53,7 +53,7 @@
                 <&macro_press>,
                 <&kp LEFT_CONTROL &kp LEFT_ALT &kp LEFT_ARROW>,
                 <&macro_release>,
-                <&kp LEFT_CONTROL &kp LEFT_GUI>;
+                <&kp LEFT_CONTROL &kp LEFT_ALT &kp LEFT>;
 
             label = "LEFTWINDOW";
         };
@@ -64,7 +64,8 @@
             bindings =
                 <&macro_press>,
                 <&kp LEFT_CONTROL &kp LEFT_ALT &kp RIGHT>,
-                <&macro_release>;
+                <&macro_release>,
+                <&kp LEFT_CONTROL &kp LEFT_ALT &kp RIGHT>;
 
             label = "RIGHTWINDOW";
         };
@@ -75,7 +76,8 @@
             bindings =
                 <&macro_press>,
                 <&kp LEFT_CONTROL &kp LEFT_ALT &kp ENTER>,
-                <&macro_release>;
+                <&macro_release>,
+                <&kp LEFT_CONTROL &kp LEFT_ALT &kp ENTER>;
 
             label = "FULLWINDOW";
         };
@@ -86,7 +88,8 @@
             bindings =
                 <&macro_press>,
                 <&kp LEFT_SHIFT &kp LEFT_ALT &kp NUMBER_4>,
-                <&macro_release>;
+                <&macro_release>,
+                <&kp LEFT_SHIFT &kp LEFT_ALT &kp NUMBER_4>;
 
             label = "CAPTURE";
         };
@@ -100,11 +103,11 @@
 
         layer0 {
             bindings = <
-&kp ESC     &kp N1       &kp N2        &kp N3            &kp N4  &kp N5       &mmv MOVE_UP     &kp N6     &kp N7  &kp N8         &kp N9       &kp N0    &kp BACKSPACE
-&kp TAB     &kp Q        &kp W         &kp E             &kp R   &kp T        &mmv MOVE_DOWN   &kp Y      &kp U   &kp I          &kp O        &kp P     &kp BACKSPACE
-&kp CAPS    &kp A        &kp S         &kp D             &kp F   &kp G        &mmv MOVE_LEFT   &kp H      &kp J   &kp K          &kp L        &kp SEMI  &kp APOS
-&kp LSHFT   &kp Z        &kp X         &kp C             &kp V   &kp B        &mmv MOVE_RIGHT  &kp N      &kp M   &kp COMMA      &kp DOT      &kp FSLH  &kp RIGHT_SHIFT
-&kp C_MUTE  &leftwindow  &rightwindow  &kp LEFT_COMMAND  &mo 1   &kp SPACE    &mkp LCLK        &kp ENTER  &mo 2   &kp RIGHT_ALT  &fullwindow  &capture
+&kp ESC           &kp N1       &kp N2        &kp N3            &kp N4  &kp N5       &mmv MOVE_UP     &kp N6     &kp N7  &kp N8         &kp N9       &kp N0    &kp BACKSPACE
+&kp TAB           &kp Q        &kp W         &kp E             &kp R   &kp T        &mmv MOVE_DOWN   &kp Y      &kp U   &kp I          &kp O        &kp P     &kp BACKSPACE
+&kp LEFT_CONTROL  &kp A        &kp S         &kp D             &kp F   &kp G        &mmv MOVE_LEFT   &kp H      &kp J   &kp K          &kp L        &kp SEMI  &kp APOS
+&kp LSHFT         &kp Z        &kp X         &kp C             &kp V   &kp B        &mmv MOVE_RIGHT  &kp N      &kp M   &kp COMMA      &kp DOT      &kp FSLH  &kp RIGHT_SHIFT
+&kp C_MUTE        &leftwindow  &rightwindow  &kp LEFT_COMMAND  &mo 1   &kp SPACE    &mkp LCLK        &kp ENTER  &mo 2   &kp RIGHT_ALT  &fullwindow  &capture
             >;
 
             sensor-bindings = <&inc_dec_kp LC(K_SCROLL_UP) K_SCROLL_DOWN>;
