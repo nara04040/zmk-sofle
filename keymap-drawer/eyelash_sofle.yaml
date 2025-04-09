@@ -151,7 +151,7 @@ layers:
   - $
   - '%'
   - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
-  - $$mdi:apple-keyboard-control$$
+  - ^
   - '&'
   - '*'
   - (
